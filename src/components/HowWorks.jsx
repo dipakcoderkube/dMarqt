@@ -27,7 +27,7 @@ const HowWorks = () => {
         });
     }, []);
     useGSAP(() => {
-        const timeline = gsap.timeline({
+        const timeline3 = gsap.timeline({
             scrollTrigger: {
                 trigger: '.red-section',
                 start: 'top 50%',
@@ -39,8 +39,9 @@ const HowWorks = () => {
             },
         });
         // one
-        timeline
+        timeline3
             // one
+            .from('.How_works_main_heading', { y: -200, delay: 0.5, opacity: 0, stagger: 0.4 })
             .from('.circle', { x: -200, delay: 0.5, opacity: 0 })
             .from('.border-animation', { x: -200, delay: 0.5, opacity: 0 })
             .from('.border-after', { opacity: 0 })
@@ -62,9 +63,9 @@ const HowWorks = () => {
     return (
         <>
             <section id="howworks-section" className='container px-4 mx-auto font-Poppins py-12 md:py-28'>
-                <div className='flex justify-between items-center mb-10 md:mb-20'>
-                    <h2 className='text-xl md:text-3xl xl:text-4xl font-bold'>Here's how it works</h2>
-                    <button className='bg-[#171717] py-2 xl:py-3 text-sm xl:text-base px-5 xl:px-6 font-semibold text-white rounded-full'>Learn More</button>
+                <div className='flex justify-between items-center mb-10 md:mb-20 How_works_main_heading'>
+                    <h2 className='text-xl md:text-3xl xl:text-4xl font-bold '>Here's how it works</h2>
+                    <button className='bg-[#171717]  border-[#171717] border hover:bg-white hover:text-black duration-300 transition-all py-2 xl:py-3 text-sm xl:text-base px-5 xl:px-6 font-semibold text-white rounded-full'>Learn More</button>
                 </div>
 
                 <div className='overflow-hidden relative'>

@@ -12,13 +12,13 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="flex items-center text-sm md:text-base space-x-6 md:space-x-14 font-medium">
-                            <a href="#" className=" text-black font-medium ">
+                            <a href="#" className=" text-black font-medium hover:text-[#FFB423] duration-300 transition-all ">
                                 Twitter
                             </a>
-                            <a href="#" className=" text-black font-medium">
+                            <a href="#" className=" text-black font-medium hover:text-[#FFB423] duration-300 transition-all">
                                 Discord
                             </a>
-                            <a href="#" className=" text-black font-medium">
+                            <a href="#" className=" text-black font-medium hover:text-[#FFB423] duration-300 transition-all">
                                 Docs
                             </a>
                         </div>

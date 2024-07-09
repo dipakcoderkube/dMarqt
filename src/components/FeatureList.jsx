@@ -10,6 +10,7 @@ const FeatureList = () => {
 
     useGSAP(() => {
         let horizontalSection = document.querySelector('.horizontal');
+        let secondSection = document.querySelector('.second-section');
         gsap.to('.horizontal', {
             x: () => horizontalSection.scrollWidth * -1,
             xPercent: 100,
@@ -17,23 +18,41 @@ const FeatureList = () => {
                 trigger: '.horizontal',
                 start: 'center center',
                 duration: 2,
-                end: '+=2000px',
+                end: '+=3000px',
                 pin: '#horizontal-scroll',
                 scrub: 2,
                 invalidateOnRefresh: true,
                 // markers: true,
             },
         });
+        const tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.second-section',
+                start: 'top center',
+                end: 'bottom center',
+                scrub: 1,
+                duration: 2
+                // markers: true,
+            }
+        });
+
+        tl2.from('.second-section', {
+            scale: 0.7,
+            opacity: 0,
+        });
     }, []);
+
 
 
 
 
     return (
 
-        <section id="horizontal-scroll" className="py-12 md:py-20 lg:py-24 2xl:py-52 container px-4 mx-auto overflow-hidden font-Poppins">
-            <h3 className='text-center text-2xl xl:text-4xl font-semibold text-[#161616] mb-2 md:mb-4 lg:mb-6'>Our Core Features</h3>
-            <p className='text-sm lg:text-base max-w-[690px] break-keep mx-auto text-center text-[#9b9b9b] font-medium mb-14'>Experience a new era of smarter, safer transactions powered by truly one-of-a-kind Al and enjoy unlimited freedom to buy and sell with your crypto.</p>
+        <section id="horizontal-scroll" className="py-12 md:py-20 lg:py-24 2xl:py-52 container px-4 mx-auto overflow-hidden font-Poppins ">
+            <div className='second-section'>
+                <h3 className='text-center text-2xl xl:text-4xl font-semibold text-[#161616] mb-2 md:mb-4 lg:mb-6'>Our Core Features</h3>
+                <p className='text-sm lg:text-base max-w-[690px] break-keep mx-auto text-center text-[#9b9b9b] font-medium mb-14'>Experience a new era of smarter, safer transactions powered by truly one-of-a-kind Al and enjoy unlimited freedom to buy and sell with your crypto.</p>
+            </div>
             <div className="overflow-hidden">
                 <div className="horizontal flex h-full gap-4">
                     {/* 1 */}

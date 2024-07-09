@@ -20,6 +20,9 @@ const WhyChoose = () => {
                 // markers: true,
             },
         });
+        timeline_whyChoose
+            .from('.why_heading', { y: -100, opacity: 0 })
+
 
         timeline_whyChoose
             .from('.hello', { y: -100, opacity: 0 })
@@ -34,6 +37,11 @@ const WhyChoose = () => {
             .from('.line-animation2', { x: -400, opacity: 0, delay: 0.5 }, "-=0.5")
             .to('.ani-border3', { y: 10, opacity: 0.3, ease: 'power2.inOut' }, "-=0.5")
             .to('.ani-border4', { y: 10, opacity: 0.3, ease: 'power2.inOut' }, "-=0.5")
+            .from('.crypto_img', {
+                y: -50,
+                opacity: 0,
+                stagger: 0.4
+            })
 
         timeline_whyChoose
             .to('.ani-border5', { y: 10, opacity: 0.3, ease: 'power2.inOut' }, "-=0.5")
@@ -48,7 +56,7 @@ const WhyChoose = () => {
         <>
             <div className='bg-[#191816] font-Poppins ani-border-section overflow-hidden'>
                 <div className='container px-4 mx-auto xl:h-screen py-16 lg:py-24 text-white flex flex-col justify-center relative'>
-                    <h2 className='text-xl md:text-3xl xl:text-4xl font-bold mb-10 md:mb-20'>Why Choose dMarqt</h2>
+                    <h2 className='text-xl md:text-3xl xl:text-4xl font-bold mb-10 md:mb-20 why_heading'>Why Choose dMarqt</h2>
                     <div className='flex justify-between gap-5 '>
 
                         <div className='flex flex-col gap-6 md:gap-8 lg:gap-16 relative'>
@@ -134,14 +142,14 @@ const WhyChoose = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='absolute right-0 bottom-0 flex-col gap-11 pb-16 hidden md:flex'>
-                            <div className='max-w-[60px] lg:max-w-[100px] xl:max-w-[140px] w-full origin-center rotate-45'>
+                        <div className='absolute right-0 bottom-0 flex-col gap-11 pb-16 hidden md:flex '>
+                            <div className='max-w-[60px] lg:max-w-[100px] xl:max-w-[140px] w-full origin-center rotate-45 crypto_img'>
                                 <img src={crypto} alt="img" className='w-full h-full' />
                             </div>
-                            <div className='max-w-[90px] lg:max-w-[120px] xl:max-w-[160px] w-full origin-bottom -rotate-12'>
+                            <div className='max-w-[90px] lg:max-w-[120px] xl:max-w-[160px] w-full origin-bottom -rotate-12 crypto_img'>
                                 <img src={crypto} alt="img" className='w-full h-full' />
                             </div>
-                            <div className='max-w-[100px] lg:max-w-[140px] xl:max-w-[180px] w-full rotate-45'>
+                            <div className='max-w-[100px] lg:max-w-[140px] xl:max-w-[180px] w-full rotate-45 crypto_img'>
                                 <img src={crypto} alt="img" className='w-full h-full' />
                             </div>
                         </div>
