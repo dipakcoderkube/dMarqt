@@ -48,7 +48,7 @@ const FeatureList = () => {
 
     return (
 
-        <section id="horizontal-scroll" className="py-12 md:py-20 lg:py-24 2xl:py-52 container px-4 mx-auto overflow-hidden font-Poppins ">
+        <section id="horizontal-scroll" className="py-12 md:py-20 container px-4 mx-auto overflow-hidden font-Poppins ">
             <div className='second-section'>
                 <h3 className='text-center text-2xl xl:text-4xl font-semibold text-[#161616] mb-2 md:mb-4 lg:mb-6'>Our Core Features</h3>
                 <p className='text-sm lg:text-base max-w-[690px] break-keep mx-auto text-center text-[#9b9b9b] font-medium mb-14'>Experience a new era of smarter, safer transactions powered by truly one-of-a-kind Al and enjoy unlimited freedom to buy and sell with your crypto.</p>

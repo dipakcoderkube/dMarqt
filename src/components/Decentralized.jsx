@@ -44,7 +44,7 @@ const Decentralized = () => {
     return (
         <>
             <div className='container px-4 mx-auto font-Poppins Decentralized-section'>
-                <div className='grid md:grid-cols-2 items-center py-10 md:py-20 xl:h-screen gap-12 md:gap-4 lg:gap-8'>
+                <div className='grid md:grid-cols-2 items-center py-10 md:py-20 gap-12 md:gap-4 lg:gap-8'>
                     <div className='max-w-[350px] mx-auto md:max-w-[800px] w-full Decen_img'>
                         <img src={Decentralized_img} alt="img" className='h-full w-full' />
                     </div>
