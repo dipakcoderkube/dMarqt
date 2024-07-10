@@ -13,6 +13,7 @@ const WhyChoose = () => {
             scrollTrigger: {
                 trigger: '.ani-border-section',
                 start: 'top 50%',
+                // scroller: '.scroll-container',
                 end: 'bottom 50%',
                 scrub: 2,
                 yoyo: true,

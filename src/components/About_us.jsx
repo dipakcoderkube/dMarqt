@@ -13,6 +13,7 @@ const About_us = () => {
         const AboutUs = gsap.timeline({
             scrollTrigger: {
                 trigger: '#AboutUS',
+                // scroller: '.scroll-container',
                 start: 'top 50%',
                 end: 'bottom 100%',
                 scrub: 2,

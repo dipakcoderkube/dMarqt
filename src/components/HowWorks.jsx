@@ -15,6 +15,7 @@ const HowWorks = () => {
             scrollTrigger: {
                 trigger: '.howworks',
                 start: 'center center',
+                // scroller: '.scroll-container',
                 end: '+=2000px',
                 pin: '#howworks-section',
                 scrub: 2,

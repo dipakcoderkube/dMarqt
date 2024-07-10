@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Decentralized_img from './../assets/png/section_two.png';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 
 const Decentralized = () => {
+
     gsap.registerPlugin(ScrollTrigger);
     // const isMobile = window.matchMedia("(max-width: 425px)").matches;
     // console.log(isMobile);
+    // useGSAP(() => {
+    //     const timeline = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: '.Decentralized-section',
+    //             scroller: '.scroll-container',
+    //             start: 'top 50%',
+    //             end: 'bottom 100%',
+    //             scrub: 2,
+    //             yoyo: true,
+    //             ease: "power4.out",
+    //             // markers: true,
+    //         },
+    //     });
+
+
     useGSAP(() => {
         const timeline = gsap.timeline({
             scrollTrigger: {
@@ -16,10 +32,11 @@ const Decentralized = () => {
                 end: 'bottom 100%',
                 scrub: 2,
                 yoyo: true,
-                ease: "power4.out",
+                ease: 'power4.out',
                 // markers: true,
             },
         });
+
         // one
         timeline
             // one
@@ -38,7 +55,7 @@ const Decentralized = () => {
                 duration: 1
                 // delay: 0.2
             })
-
+        ScrollTrigger.refresh();
 
     });
     return (

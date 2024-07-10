@@ -16,6 +16,7 @@ const FeatureList = () => {
             xPercent: 100,
             scrollTrigger: {
                 trigger: '.horizontal',
+                // scroller: '.scroll-container',
                 start: 'center center',
                 duration: 2,
                 end: '+=3000px',
@@ -28,6 +29,7 @@ const FeatureList = () => {
         const tl2 = gsap.timeline({
             scrollTrigger: {
                 trigger: '.second-section',
+                // scroller: '.scroll-container',
                 start: 'top center',
                 end: 'bottom center',
                 scrub: 1,

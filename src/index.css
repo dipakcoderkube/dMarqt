@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 
+html {
+    scroll-behavior: initial !important;
+}
+
+html, body {
+    min-height: 100vh;
+    height: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
 .custom-height {
     height: calc(100vh - 89px);
 }

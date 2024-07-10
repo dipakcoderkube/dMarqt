@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import header_img from './../assets/png/header.png'
 import './../index.css'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+// import LocomotiveScroll from 'locomotive-scroll';
+// import 'locomotive-scroll/dist/locomotive-scroll.css';
+
 
 const Header = () => {
+    // const scrollRef = useRef(null);
+    // useEffect(() => {
+    //     const scroll = new LocomotiveScroll({
+    //         el: scrollRef.current,
+    //         smooth: true,
+    //     });
+
+    //     return () => {
+    //         if (scroll) scroll.destroy();
+    //     };
+    // }, []);
+
+
+
     const [isOpen, setIsOpen] = useState(false);
 
     const timeline = gsap.timeline({})
