@@ -12,7 +12,7 @@ import Lenis from '@studio-freight/lenis'
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 4,
+      duration: 2,
     })
     function raf(time) {
       lenis.raf(time)
